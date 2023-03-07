@@ -1,9 +1,9 @@
 {
   "expo": {
     "name": "Host Robo DC",
-    "slug": "HostRoboDC",
+    "slug": "hostrobodc",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
