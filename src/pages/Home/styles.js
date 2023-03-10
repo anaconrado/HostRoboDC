@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { Header } from "react-native/Libraries/NewAppScreen";
 
 export default StyleSheet.create({
     HomeContainer: {
@@ -20,6 +19,7 @@ export default StyleSheet.create({
     },
 
     rightContainer: {
+        alignItems: 'center',
         paddingVertical: 50,
         paddingHorizontal: 10,
         width: '60%',
@@ -27,6 +27,15 @@ export default StyleSheet.create({
         //borderLeftColor: '#D1603A',
         //borderBottomWidth: 200,
         //borderBottomColor: 'transparent'
+    },
+
+    headerLeft: {
+        flexDirection: 'row',
+    },
+
+    icon: {
+        marginHorizontal: '5%',
+        color: 'white',
     },
 
     headerTextLeft: {
@@ -46,13 +55,29 @@ export default StyleSheet.create({
 
     paragrafoLeft: {
         color: '#FFFFFF',
-        fontSize: 18,
+        fontSize: 20,
         textAlign: 'center',
     },
 
     paragrafoRight: {
-        fontSize: 18,
+        marginBottom: 20,
+        fontSize: 20,
         textAlign: 'center',
     },
+
+    button: {
+        marginTop: 10, 
+        width: '60%',
+        padding: 7,
+        backgroundColor: '#D1603A',
+        borderRadius: 5,
+    },
+
+    buttonText: {
+        fontWeight: 'bold',
+        fontSize: 25,
+        color: '#FFFFFF',
+        textAlign: 'center',
+    }
 
 })
