@@ -3,16 +3,19 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
 
     header: {
-        height: '20%',
+        flexDirection: 'row',
+        height: '15%',
         backgroundColor: '#D1603A',
+        alignItems: 'center',
+        paddingHorizontal: '2%'
     },
     
     headerText: {
+        marginLeft: '38%',
+        textAlign: 'center',
         fontWeight: 'bold',
-        marginTop: '3%',
         fontSize: 25,
         color: '#FFFFFF',
-        textAlign: 'center',
     },
 
     form: {
@@ -27,6 +30,9 @@ export default StyleSheet.create({
     },
 
     input: {
+        padding: '3%',
+        fontSize: 25,
+        color: '#909090',
         height: '18%',
         marginBottom: '2%',
         borderRadius: 10,
