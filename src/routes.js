@@ -7,7 +7,6 @@ const AppStack = createNativeStackNavigator();
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Menu from './pages/Menu';
-import Mapa from './pages/Mapa';
 import Calendario from './pages/Calendario';
 {/*}
 import ConverseComigo from './pages/ConverseComigo';
@@ -26,7 +25,6 @@ export default function Routes() {
                 <AppStack.Screen name="Login" component={Login} />
                 <AppStack.Screen name="Menu" component={Menu} />
                 <AppStack.Screen name="Calendario" component={Calendario} />
-                <AppStack.Screen name="Mapa" component={Mapa} />
                 {/*<AppStack.Screen name="Calendario "component={Calendario} />
                 <AppStack.Screen name="ConverseComigo" component={ConverseComigo} />
                 <AppStack.Screen name="EventosInscritos" component={EventosInscritos} />

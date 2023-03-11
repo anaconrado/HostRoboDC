@@ -18,6 +18,21 @@ export default function Calendario() {
     const [modal3Visible, setModal3Visible] = useState(false);
     const [modal4Visible, setModal4Visible] = useState(false);
     const [modal5Visible, setModal5Visible] = useState(false);
+
+    const chamadaAPI1 = async() => {
+        console.log('Chamando API...');
+        fetch('http://192.168.0.200:5000/ros/goTo/Auditorio').catch((error)=> console.log(error));
+      }
+
+    const chamadaAPI2 = async() => {
+    console.log('Chamando API...');
+    fetch('http://192.168.0.200:5000/ros/goTo/LE-2').catch((error)=> console.log(error));
+    }
+
+    const chamadaAPI3 = async() => {
+    console.log('Chamando API...');
+    fetch('http://192.168.0.200:5000/ros/goTo/Maker').catch((error)=> console.log(error));
+    }
     
     const dismissKeyboard = () => {
         Keyboard.dismiss();
@@ -27,11 +42,23 @@ export default function Calendario() {
         navigation.goBack();
       };
 
-    const handlePress = () => {
+      
+    const handlePress1 = () => {
         setModal5Visible(true)
         setModal1Visible(false)
+        chamadaAPI1()
+    }
+
+    const handlePress2 = () => {
+        setModal5Visible(true)
         setModal2Visible(false)
+        chamadaAPI2()
+    }
+
+    const handlePress3 = () => {
+        setModal5Visible(true)
         setModal3Visible(false)
+        chamadaAPI3()
     }
 
     return (
@@ -87,7 +114,7 @@ export default function Calendario() {
                                 <Text style={styles.modalText}>Auditório do DC</Text>
                             </View>
                             <View style={styles.line} />
-                            <TouchableOpacity style={styles.row } onPress={handlePress}>
+                            <TouchableOpacity style={styles.row } onPress={handlePress1}>
                                 <MaterialIcons name="navigation" style={styles.icon} size={25} color={'#EEEEEE'}/>
                                 <Text style={styles.modalText}>Ir ao local de evento</Text>
                             </TouchableOpacity>
@@ -119,10 +146,10 @@ export default function Calendario() {
                             </View>
                             <View style={styles.row}>
                                 <MaterialIcons name="location-on" style={styles.icon} size={25} color={'#EEEEEE'}/>
-                                <Text style={styles.modalText}>Churrasqueira do DC</Text>
+                                <Text style={styles.modalText}>LE-2</Text>
                             </View>
                             <View style={styles.line} />
-                            <TouchableOpacity style={styles.row } onPress={handlePress}>
+                            <TouchableOpacity style={styles.row } onPress={handlePress2}>
                                 <MaterialIcons name="navigation" style={styles.icon} size={25} color={'#EEEEEE'}/>
                                 <Text style={styles.modalText}>Ir ao local de evento</Text>
                             </TouchableOpacity>
@@ -154,10 +181,10 @@ export default function Calendario() {
                             </View>
                             <View style={styles.row}>
                                 <MaterialIcons name="location-on" style={styles.icon} size={25} color={'#EEEEEE'}/>
-                                <Text style={styles.modalText}>LE-2</Text>
+                                <Text style={styles.modalText}>Espaço Maker</Text>
                             </View>
                             <View style={styles.line} />
-                            <TouchableOpacity style={styles.row } onPress={handlePress}>
+                            <TouchableOpacity style={styles.row } onPress={handlePress3}>
                                 <MaterialIcons name="navigation" style={styles.icon} size={25} color={'#EEEEEE'}/>
                                 <Text style={styles.modalText}>Ir à local de evento</Text>
                             </TouchableOpacity>
