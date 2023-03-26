@@ -2,11 +2,20 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
 
+    container: {
+        height: '100%'
+    },
+
+    contentContainer: {
+        height: '75%',
+    }, 
+    
     header: {
-        height: '13%',
+        flexDirection: 'row',
+        height: '10%',
         backgroundColor: '#D1603A',
-        paddingTop: '1%',
-        paddingLeft: '2%'
+        alignItems: 'center',
+        paddingHorizontal: '2%'
     },
 
     headerText: {
@@ -17,9 +26,7 @@ export default StyleSheet.create({
     },
 
     button: {
-        padding: '1%',
         width: '80%',
-        height: 45,
         marginHorizontal: '5%',
         margin: '0.8%',
         backgroundColor: '#D1603A',
@@ -27,12 +34,14 @@ export default StyleSheet.create({
     },
 
     buttonText: {
+        margin: '1%',
         color: 'white',
         fontSize: 23,
     },
 
     addButton: {
-        marginLeft: '90%' 
+        alignSelf: 'flex-end',
+        marginRight: '2%',
     },
 
     modalContainer: {
@@ -43,7 +52,7 @@ export default StyleSheet.create({
       },
 
     modalBox: {
-        height: '85%',
+        height: '65%',
         aspectRatio: 1,
         backgroundColor: '#D1603A',
         borderRadius: 10,
@@ -95,7 +104,7 @@ export default StyleSheet.create({
     },
 
     modal5Box: {
-        height: '50%',
+        height: '40%',
         aspectRatio: 1,
         backgroundColor: '#D1603A',
         borderRadius: 10,

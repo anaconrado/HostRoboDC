@@ -2,31 +2,40 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
 
+    container: {
+        height: '100%'
+    },
+
     header: {
-        paddingTop: '1%',
-        paddingHorizontal: '2%',
-        backgroundColor: '#D1603A',
+        flexDirection: 'row',
         height: '10%',
+        backgroundColor: '#D1603A',
+        alignItems: 'center',
+        paddingHorizontal: '2%'
     },
 
     row: {
         flexDirection: 'row',
+        width: '90%',
+        height: '40%',
+        justifyContent: 'center'
     },
 
     content: {
-        margin: '3%',
+        height: '80%',
+        padding: '3%',
         alignItems: 'center'
     },
     
     headerText: {
-        paddingBottom: '1%',
-        fontSize: 20,
+        paddingBottom: '2%',
+        fontSize: 23,
         fontWeight: 'bold'
     },
 
     button: {
         margin: '1%',
-        height: 100,
+        height: '90%',
         width: '25%',
         justifyContent: 'center'
     },
@@ -46,8 +55,7 @@ export default StyleSheet.create({
     },
     
     footer: {
-        height: '20%',
+        height: '10%',
         backgroundColor: '#D1603A',
-        justifyContent: 'flex-end',
     }
 })

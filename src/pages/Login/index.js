@@ -52,11 +52,11 @@ export default function Login() {
                         value={text2}
                     />
                 </TouchableWithoutFeedback>
-            <TouchableOpacity style={styles.button} onPress={handlePress}>
-                <View>
-                    <Text style={styles.buttonText}>Login</Text>
-                </View>
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={handlePress}>
+                    <View>
+                        <Text style={styles.buttonText}>Login</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     );

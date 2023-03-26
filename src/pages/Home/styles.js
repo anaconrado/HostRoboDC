@@ -4,15 +4,12 @@ export default StyleSheet.create({
     HomeContainer: {
         flex: 1,
         flexDirection: 'row',
-        //position: "absolute",
-        //top: '50%',
-        //left: '50%',
         backgroundColor: '#EEEEEE',
-        //transform: [{translateY: -200}, {translateX: -425}],
+        height: '100%'
     },
 
     leftContainer: {
-        paddingVertical: 50,
+        paddingVertical: '10%',
         backgroundColor: '#D1603A',
         paddingHorizontal: 50,
         width: '40%',
@@ -20,13 +17,9 @@ export default StyleSheet.create({
 
     rightContainer: {
         alignItems: 'center',
-        paddingVertical: 50,
+        paddingVertical: '10%',
         paddingHorizontal: 10,
         width: '60%',
-        //borderLeftWidth: 100,
-        //borderLeftColor: '#D1603A',
-        //borderBottomWidth: 200,
-        //borderBottomColor: 'transparent'
     },
 
     headerLeft: {
@@ -40,28 +33,28 @@ export default StyleSheet.create({
 
     headerTextLeft: {
         fontWeight: 'bold',
-        marginBottom: 40,
-        fontSize: 25,
+        marginBottom: '15%',
+        fontSize: 28,
         color: '#FFFFFF',
         textAlign: 'center',
     },
 
     headerTextRight: {
         fontWeight: 'bold',
-        marginBottom: 40,
-        fontSize: 25,
+        marginBottom: '10%',
+        fontSize: 28,
         textAlign: 'center',
     },
 
     paragrafoLeft: {
         color: '#FFFFFF',
-        fontSize: 20,
+        fontSize: 23,
         textAlign: 'center',
     },
 
     paragrafoRight: {
-        marginBottom: 20,
-        fontSize: 20,
+        marginBottom: '7%',
+        fontSize: 23,
         textAlign: 'center',
     },
 

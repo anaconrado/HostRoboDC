@@ -2,9 +2,13 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
 
+    container: {
+        height: '100%'
+    },
+    
     header: {
         flexDirection: 'row',
-        height: '15%',
+        height: '10%',
         backgroundColor: '#D1603A',
         alignItems: 'center',
         paddingHorizontal: '2%'
@@ -43,7 +47,7 @@ export default StyleSheet.create({
     button: {
         marginTop: '5%', 
         height: '18%',
-        padding: 7,
+        padding: '2%',
         backgroundColor: '#D1603A',
         borderRadius: 5,
     },

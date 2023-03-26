@@ -21,17 +21,17 @@ export default function Calendario() {
 
     const chamadaAPI1 = async() => {
         console.log('Chamando API...');
-        fetch('http://192.168.0.200:5000/ros/goTo/Auditorio').catch((error)=> console.log(error));
+        fetch('http://192.168.1.100:5000/ros/goTo/Auditorio').catch((error)=> console.log(error));
       }
 
     const chamadaAPI2 = async() => {
     console.log('Chamando API...');
-    fetch('http://192.168.0.200:5000/ros/goTo/LE-2').catch((error)=> console.log(error));
+    fetch('http://192.168.1.100:5000/ros/goTo/LE-2').catch((error)=> console.log(error));
     }
 
     const chamadaAPI3 = async() => {
     console.log('Chamando API...');
-    fetch('http://192.168.0.200:5000/ros/goTo/Maker').catch((error)=> console.log(error));
+    fetch('http://192.168.1.100:5000/ros/goTo/Maker').catch((error)=> console.log(error));
     }
     
     const dismissKeyboard = () => {
@@ -62,28 +62,30 @@ export default function Calendario() {
     }
 
     return (
-        <View style={styles.container}>
+        <View style={styles.container}> 
             <View style={styles.header}>
                 <TouchableOpacity onPress={goBack}>
                     <MaterialIcons name="arrow-back" style={styles.icon} size={30} color={'white'}/>
                 </TouchableOpacity>
             </View>
-            <Text style={styles.headerText}> Eventos Próximos </Text>
-            <TouchableOpacity onPress={() => setModal1Visible(true)}>
-                <View style={styles.button}>
-                    <Text style={styles.buttonText}>Palestra IHC - Terça as 14:00</Text>
-                </View>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => setModal2Visible(true)}>
-                <View style={styles.button}>
-                    <Text style={styles.buttonText}>Game Night - Quinta as 19:30</Text>
-                </View>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => setModal3Visible(true)}>
-                <View style={styles.button}>
-                    <Text style={styles.buttonText}>Workshop React Native - Sexta as 16:00</Text>
-                </View>
-            </TouchableOpacity>
+            <View style={styles.contentContainer}>
+                <Text style={styles.headerText}> Eventos Próximos </Text>
+                <TouchableOpacity onPress={() => setModal1Visible(true)}>
+                    <View style={styles.button}>
+                        <Text style={styles.buttonText}>Palestra IHC - Terça as 14:00</Text>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => setModal2Visible(true)}>
+                    <View style={styles.button}>
+                        <Text style={styles.buttonText}>Game Night - Quinta as 19:30</Text>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => setModal3Visible(true)}>
+                    <View style={styles.button}>
+                        <Text style={styles.buttonText}>Workshop React Native - Sexta as 16:00</Text>
+                    </View>
+                </TouchableOpacity>
+            </View>
             <TouchableOpacity onPress={() => setModal4Visible(true)} style={styles.addButton}>
                 <MaterialIcons name="add-circle" style={styles.icon} size={60} color={'#D1603A'}/>
             </TouchableOpacity>

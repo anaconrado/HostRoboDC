@@ -29,7 +29,7 @@ export default function Menu() {
                         <ImageBackground
                             source={require('./../../../assets/banner1.jpg')}
                             style={styles.backgroundImage}
-                            blurRadius={4}
+                            blurRadius={10}
                             borderRadius={14}
                         >
                             <Text style={styles.buttonText}>Mapa do DC</Text>
@@ -41,7 +41,7 @@ export default function Menu() {
                         <ImageBackground
                             source={require('./../../../assets/banner1.jpg')}
                             style={styles.backgroundImage}
-                            blurRadius={4}
+                            blurRadius={10}
                             borderRadius={14}
                         >
                             <Text style={styles.buttonText}>Sobre mim</Text>
@@ -53,7 +53,7 @@ export default function Menu() {
                         <ImageBackground
                             source={require('./../../../assets/banner1.jpg')}
                             style={styles.backgroundImage}
-                            blurRadius={4}
+                            blurRadius={10}
                             borderRadius={14}
                         >
                             <Text style={styles.buttonText}>Ache uma sala</Text>
@@ -67,7 +67,7 @@ export default function Menu() {
                         <ImageBackground
                             source={require('./../../../assets/banner1.jpg')}
                             style={styles.backgroundImage}
-                            blurRadius={4}
+                            blurRadius={10}
                             borderRadius={14}
                         >
                             <Text style={styles.buttonText}>Eventos</Text>
@@ -79,7 +79,7 @@ export default function Menu() {
                         <ImageBackground
                             source={require('./../../../assets/banner1.jpg')}
                             style={styles.backgroundImage}
-                            blurRadius={4}
+                            blurRadius={10}
                             borderRadius={14}
                         >
                             <Text style={styles.buttonText}>Converse comigo</Text>
@@ -91,7 +91,7 @@ export default function Menu() {
                         <ImageBackground
                             source={require('./../../../assets/banner1.jpg')}
                             style={styles.backgroundImage}
-                            blurRadius={4}
+                            blurRadius={10}
                             borderRadius={14}
                         >
                             <Text style={styles.buttonText}>História do DC</Text>
